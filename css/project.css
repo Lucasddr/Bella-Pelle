@@ -1,0 +1,312 @@
+/* ===== HERO HEADER ===== */
+#hero-header {
+    grid-template-columns: 0.6fr 1.4fr;
+    padding-inline: 2rem;
+}
+
+#hero-section {
+    background: linear-gradient(135deg, #fff9fc 0%, #fce9f3 60%, #fff5d6 100%);
+    min-height: calc(100vh - var(--header-height));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero-container {
+    position: relative;
+    z-index: 1;
+    min-height: unset;
+    padding-block: 6rem;
+}
+
+#hero-container .hero-text {
+    max-width: 580px;
+}
+
+#hero-container h2 {
+    font-family: var(--font-primary);
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: var(--spacing-l);
+}
+
+#hero-container h2 em {
+    font-style: italic;
+    color: rgba(0,0,0,0.5);
+}
+
+#hero-container .hero-p {
+    font-size: var(--fs-subtitle);
+    color: var(--color-text-muted);
+    max-width: 480px;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-l);
+}
+
+#hero-container .hero-btns {
+    display: flex;
+    gap: var(--spacing-m);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#hero-container .hero-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-s);
+    margin-top: var(--spacing-xl);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+#hero-container .hero-badge span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+#hero-container .star{
+    color: var(--color-secondary-hover);
+}
+
+/* ===== ABOUT SECTION ===== */
+#about-section {
+    background-color: var(--color-white);
+}
+
+#about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+    flex-direction: unset;
+}
+
+#about-container .flex-column{
+    align-items: flex-start; 
+    gap: var(--spacing-l);
+}
+
+#about-container .section-subtitle:last-child{
+    margin-top: -0.5rem;
+}
+
+.about-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-card-float {
+    background: var(--color-white);
+    border-radius: var(--radius-card);
+    padding: var(--spacing-l);
+    box-shadow: var(--shadow-card);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-m);
+}
+
+.about-stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-stat strong {
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-text);
+}
+
+.about-stat span {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.about-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(235, 178, 211, 0.4);
+}
+
+.about-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--color-card);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.about-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: var(--spacing-m);
+}
+
+@media (max-width: 900px) {
+    #about-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== SERVICES SECTION ===== */
+#services-section {
+    background: linear-gradient(180deg, #fff9fc 0%, #fce9f3 100%);
+}
+
+#services-container .services-header {
+    margin-bottom: var(--spacing-xl);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-l);
+    width: 100%;
+}
+
+.card .button-s{
+    font-size:0.85rem; 
+    padding-inline: var(--spacing-m);
+}
+
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== FAQ SECTION ===== */
+#faq-section {
+    background-color: var(--color-white);
+}
+
+#faq-container {
+    align-items: center;
+    gap: var(--spacing-xl);
+}
+
+#faq-section .section-subtitle{
+    margin: 0 auto;
+}
+
+/* ===== CONTACT SECTION ===== */
+#contact-section {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #f5d6ea 100%);
+}
+
+#contact-container {
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-l);
+}
+
+#contact-section .tag{
+    background-color: rgba(255,255,255,0.5);
+}
+
+#contact-section .section-subtitle{
+    margin: 0 auto; color: rgba(0,0,0,0.6);
+}
+
+.contact-box {
+    background: var(--color-white);
+    border-radius: var(--radius);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-card);
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-l);
+    align-items: center;
+}
+
+.contact-box h3{
+    font-family: var(--font-primary);
+    font-size: 1.8rem; 
+    font-weight: 700; 
+    text-align:center;
+}
+
+.contact-box p{
+    font-size: 0.82rem; 
+    color: var(--color-text-muted); 
+    text-align:center;
+}
+
+.contact-info-row {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-s);
+    width: 100%;
+}
+
+.contact-info-row p {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.contact-info-row i {
+    color: var(--color-card);
+    font-size: 1rem;
+}
+
+/* ===== FOOTER ===== */
+
+.footer p{
+    margin-top: -8px;
+}
+
+.justify{
+    justify-content: center;
+}
+
+/* ===== FLOATING WPP ===== */
+.wpp-float {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 999;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: var(--color-wpp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+    font-size: 1.6rem;
+    color: #fff;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.wpp-float:hover {
+    transform: scale(1.1) translateY(-4px);
+    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.55);
+}

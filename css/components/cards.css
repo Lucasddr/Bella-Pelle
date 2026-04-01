@@ -1,0 +1,65 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 360px;
+    min-height: 300px;
+    border-radius: var(--radius-card);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-card);
+    padding: var(--spacing-l);
+    gap: var(--spacing-m);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 6px 10px 40px var(--color-box-shadow);
+}
+
+.card-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background-color: var(--color-card);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.card-destach {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius);
+    background-color: var(--color-card);
+    height: 2rem;
+    padding-inline: var(--spacing-m);
+    font-size: .8rem;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+.card-title {
+    font-family: var(--font-primary);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.card-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    flex: 1;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: auto;
+    padding-top: var(--spacing-m);
+    border-top: 1px solid rgba(245, 163, 193, 0.3);
+}

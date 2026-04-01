@@ -1,0 +1,67 @@
+.wpp-btn {
+    display: inline-flex;
+    border-radius: var(--radius);
+    padding-block: var(--spacing-s);
+    padding-inline: var(--spacing-xl);
+    gap: var(--spacing-m);
+    background-color: var(--color-wpp);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.35s ease;
+    cursor: pointer;
+    font-family: var(--font-secondary);
+    font-size: var(--fs-p);
+    font-weight: 600;
+    color: #fff;
+}
+
+.wpp-btn:hover {
+    background-color: var(--color-wpp-hover);
+    box-shadow: var(--shadow-btn);
+    transform: translateY(-3px);
+}
+
+.wpp-btn i {
+    font-size: 1.2rem;
+}
+
+.button-s {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: var(--radius);
+    padding-inline: var(--spacing-l);
+    padding-block: var(--spacing-s);
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    font-family: var(--font-secondary);
+    font-size: var(--fs-p);
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.button-s:hover {
+    background-color: var(--color-secondary-hover);
+    box-shadow: var(--shadow-btn);
+}
+
+.button-outline {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: var(--radius);
+    padding-inline: var(--spacing-l);
+    padding-block: var(--spacing-s);
+    border: 2px solid var(--color-primary);
+    background-color: transparent;
+    color: var(--color-text);
+    font-family: var(--font-secondary);
+    font-size: var(--fs-p);
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.button-outline:hover {
+    background-color: var(--color-primary);
+    box-shadow: var(--shadow-btn);
+}

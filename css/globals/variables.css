@@ -1,0 +1,37 @@
+:root {
+    --color-primary: rgb(235, 178, 211);       
+    --color-secondary: rgb(142, 190, 150);      
+    --color-card: rgb(245, 163, 193);           
+    --color-box-shadow: rgb(180, 210, 183);     
+    --color-text: rgb(30, 25, 28);             
+    --color-secondary-hover: rgb(110, 158, 118); 
+    --color-wpp: rgb(37, 211, 102);             
+    --color-wpp-hover: rgb(28, 175, 82);        
+    --color-white: #fff;
+    --color-bg: #fdf5f9;                       
+    --color-text-muted: #7a6070;                
+
+    --fs-header: clamp(1.4rem, 2vw, 2.8rem);
+    --fs-p: clamp(1rem, 1.5vw, 1.3rem);
+    --fs-title: clamp(2rem, 4vw, 3.8rem);
+    --fs-subtitle: clamp(1.2rem, 2vw, 1.6rem);
+    --fs-cards: 0.95rem;
+
+    --font-primary: 'Cormorant Garamond', serif;
+    --font-secondary: 'DM Sans', system-ui, sans-serif;
+
+    --radius: 32px;
+    --radius-card: 20px;
+
+    --spacing-xs: 4px;
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 32px;
+    --spacing-xl: 64px;
+
+    --header-height: 5rem;
+    --font-spacing: 0.05em;
+
+    --shadow-card: 4px 6px 30px var(--color-box-shadow);
+    --shadow-btn: 4px 6px 10px var(--color-box-shadow);
+}
