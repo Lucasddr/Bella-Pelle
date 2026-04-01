@@ -178,6 +178,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-l);
     width: 100%;
+    align-items: center;
+    justify-items: center;
 }
 
 .card .button-s{
